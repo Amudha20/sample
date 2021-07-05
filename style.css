@@ -1,0 +1,126 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.wrap{
+    width:100%;
+    float: left;
+}
+.main{
+    margin-left: 90px;
+    width:100%;
+    position: fixed;
+}
+.main .header{
+    padding: 20px;
+    height: 80px;
+    background: #ffffff;
+    color: #1d82e7;
+   border-bottom: 1px solid #e8e9eb;
+}
+.main .sub{
+    height: 100vh;
+    background:#d6dee6;
+    opacity: 0.7;
+}
+
+.sidebar{
+    width: 90px;
+    background-color:#fafafa;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid #e8e9eb;
+}
+.sidebar h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+   padding: 20px;
+    border-bottom: 1px solid #e8e9eb;
+    border-right: 1px solid #e8e9eb;
+}
+.sidebar a{
+    display: block;
+    line-height: 30px;
+    color:#33414e;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+.sidebar a:hover{
+    background-color:#d0e0ed;
+    color: #556575;
+    font-weight: bolder;
+    border-left: 2px solid blue;
+}
+.sidebar a i{
+    display: flex;
+    color: #c4cdd2;
+    justify-content: center;
+    font-weight: bold;
+}
+.active{
+    background-color: #d6dee6;
+    border-left: 2px solid blue;
+}
+
+.main .sub span{
+    font-size: 15px;
+    margin-left: 15px;
+    line-height: 60px;
+    color: #556575;
+}
+.main .sub span i{
+    margin-right: 8px;
+    color: #666f77;
+    opacity: 0.8;
+} 
+.main .sub input[type=url]{
+    margin-left:100px;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 20px;
+    border-color: #c4cdd2;
+    border-style: hidden;
+    border-radius: 6px;
+}
+::placeholder{
+    color:#3b3b3b;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.main .sub p{
+    text-align: center;
+    margin-right: 100px;
+    padding-top: 40px;
+    font-weight: bold;
+}
+.main .sub input[type=file]{
+    display: none;
+    margin: 10px;
+}
+.main .sub input[type=file]+label{
+    display: inline-block;
+    margin: 20px;
+    padding: 4px 32px;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    padding: 65px;
+    margin-left: 100px;
+    margin-top:-20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.main .sub input[type=file]:active+label{
+    background-image: none;
+    background-color: #2d6c7a;
+    color: #ffffff;
+}
